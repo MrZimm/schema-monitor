@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head><title>Arc Flash Suit</title></head>
+<body>
+<h1>Arc Flash Suit AF-40</h1>
+<script>
+  // Schema injected after page load. A raw HTTP fetch sees nothing here.
+  window.addEventListener('DOMContentLoaded', function () {
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": "https://example.com/products/af-40#product",
+      "name": "Arc Flash Suit AF-40",
+      "description": "40 cal/cm2 arc flash protection suit.",
+      "sku": "AF-40",
+      "image": ["https://example.com/img/af-40.jpg"],
+      "brand": {"@type": "Brand", "name": "Oberon"},
+      "offers": {"@type": "Offer", "price": "1899.00", "priceCurrency": "CAD",
+                 "availability": "https://schema.org/InStock"}
+    });
+    document.head.appendChild(s);
+  });
+</script>
+</body></html>

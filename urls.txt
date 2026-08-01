@@ -1,0 +1,7 @@
+# One URL per line. Lines starting with # are ignored.
+# Start the local server first:  python3 -m http.server 8000
+http://localhost:8000/fixtures/good.html
+http://localhost:8000/fixtures/missing_fields.html
+http://localhost:8000/fixtures/client_side.html
+http://localhost:8000/fixtures/no_schema.html
+http://localhost:8000/fixtures/graph_wrapped.html
